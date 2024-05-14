@@ -18,7 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // 新增以下两个配置项,分贝事baseUrl 和 path
+    "baseUrl": ".",
+    "paths": {
+        "@/*":[
+            "src/*"
+        ]
+    }
+    
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
